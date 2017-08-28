@@ -18,7 +18,7 @@ class WebSecurityConfiguration extends GlobalAuthenticationConfigurerAdapter {
 	@Override
 	public void init(AuthenticationManagerBuilder auth) throws Exception {
       auth.inMemoryAuthentication()
-      .withUser("admin").password("123456").roles("USER");
+      .withUser("root").password("890890").roles("USER");
 	}
 }
 
@@ -26,7 +26,7 @@ class WebSecurityConfiguration extends GlobalAuthenticationConfigurerAdapter {
 @EnableResourceServer
 @EnableAuthorizationServer
 class OAuth2ServerConfig extends AuthorizationServerConfigurerAdapter {
-	String applicationName = "staffmanager";
+	String applicationName = "client_id";
 	@Autowired
 	AuthenticationManagerBuilder authenticationManager;
 

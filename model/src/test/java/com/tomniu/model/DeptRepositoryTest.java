@@ -2,20 +2,16 @@ package com.tomniu.model;
 
 import static org.junit.Assert.*;
 
-import org.hibernate.Hibernate;
 import org.junit.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.transaction.annotation.Transactional;
-
-import com.tomniu.Application;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(Application.class)
+@SpringBootApplication
 public class DeptRepositoryTest {
 
 	@Before
